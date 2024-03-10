@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 import { createApp } from "./createApp.mjs";
 
-mongoose
-	.connect("mongodb://localhost/express_tutorial")
+await mongoose
+	.connect("mongodb://localhost:27017")
 	.then(() => console.log("Connected to Database"))
 	.catch((err) => console.log(`Error: ${err}`));
 
